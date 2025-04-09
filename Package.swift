@@ -1,10 +1,10 @@
-// swift-tools-version:6.1
+// swift-tools-version:5.5
 import PackageDescription
 
 let package = Package(
     name: "FolioReaderKit",
     platforms: [
-        .iOS(.v11),    // minimum iOS version
+        .iOS(.v11),
         .macOS(.v10_12)
     ],
     products: [
@@ -36,7 +36,6 @@ let package = Package(
             ],
             path: "Sources/FolioReaderKit",
             resources: [
-                // if you need to bundle EPUB assets, storyboards, etc.
                 .process("Resources")
             ]
         ),
